@@ -71,6 +71,7 @@ body
     flex-direction: row;
     width: 80%;
     margin: auto;
+    cursor: pointer;
     
     
 }
