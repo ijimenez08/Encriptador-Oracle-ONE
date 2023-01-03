@@ -78,7 +78,7 @@ body
     
 }
   
-  .boton1, .boton2 
+  .boton1, .boton2, .boton3
   {
     border-radius: 1em;
     margin-right: 2.5em;
@@ -93,12 +93,12 @@ body
     transition: 0.2s;
         
   }
-  .boton1:hover,.boton2:hover
+  .boton1:hover,.boton2:hover, .boton3:hover
   {
     background: #10d3ec;
     box-shadow: 0 0 10px #10d3ec, 0 0 40px #10d3ec,0 0 80px #10d3ec;
     transition-delay: 1s;
-
+    
   }
     
   .salida 

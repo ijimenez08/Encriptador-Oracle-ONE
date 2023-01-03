@@ -2,16 +2,14 @@ let texbox = document.getElementById("cuadrotxt");
 let resultado =  document.getElementById("resultado");
 let boton1 = document.getElementById("boton1");
 let boton2 = document.getElementById("boton2");
-texbox.focus();
+let boton3 =document.getElementById("boton3");
 
-const removeAccents = (str) => 
-{
-    const newLocal = /[\u0300-\u036f]/g;
-    return str.normalize("NFD").replace(newLocal, "");
-}
+texbox.focus();
 
 boton1.addEventListener("click",encriptar);
 boton2.addEventListener("click",desencriptar);
+boton3.addEventListener("click",limpiar);
+
 
 
 function encriptar()
@@ -34,4 +32,9 @@ function desencriptar()
             texto=texto.replaceAll("ufat", "u");
             mss.value=texto;
        
+}
+function limpiar()
+{
+    document.getElementById("cuadrotxt").value = "";
+    document.getElementById("resultado").value = "";
 }
