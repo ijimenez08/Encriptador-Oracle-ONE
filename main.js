@@ -3,12 +3,14 @@ let resultado =  document.getElementById("resultado");
 let boton1 = document.getElementById("boton1");
 let boton2 = document.getElementById("boton2");
 let boton3 =document.getElementById("boton3");
+let email =document.getElementById("correo");
 
 texbox.focus();
 
 boton1.addEventListener("click",encriptar);
 boton2.addEventListener("click",desencriptar);
 boton3.addEventListener("click",limpiar);
+email.addEventListener("click",emailmss);
 
 
 
@@ -38,3 +40,9 @@ function limpiar()
     document.getElementById("cuadrotxt").value = "";
     document.getElementById("mss").value = "";
 }
+function emailmss()
+{
+    window.alert("mi correo es: isaacjimenez09@gmail.com");
+    
+}
+
