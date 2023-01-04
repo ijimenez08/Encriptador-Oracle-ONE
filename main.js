@@ -36,5 +36,5 @@ function desencriptar()
 function limpiar()
 {
     document.getElementById("cuadrotxt").value = "";
-    document.getElementById("resultado").value = "";
+    document.getElementById("mss").value = "";
 }

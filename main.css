@@ -7,24 +7,16 @@ body
     background: #89d7ebe1;
     font-family: Arial, Helvetica, sans-serif;
 }
-  .titulo 
-  {
-    display: flex;
-    font-size: 30px;
-    text-align: center; 
-    justify-content: center;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-
-  }
+  
   header 
   {
     display: flex;
     width: 70%;
     height: auto;
-    margin-top: 3.3em;
-    margin-left: 4em;
-    margin-right: 0;
+    margin-top: 10px;
+    margin-left: 40px;
+    margin-right: 30px;
+    margin-bottom: 15px;
      
   }
   
@@ -74,13 +66,13 @@ body
     flex-direction: row;
     width: 80%;
     margin: auto;
-    
-    
+        
 }
   
   .boton1, .boton2, .boton3
   {
     position: relative;
+    margin: auto;
     text-align: center;
     padding: 30px;
     width: 250px;
@@ -110,70 +102,46 @@ body
   .salida 
   {
     display: flex;
-    flex-direction: column;
+    font-size: 18px;
     align-items: center;
     align-content: center;
     justify-content: center;
     text-align: center;
-    width: 25%;
+    width: 30%;
     background-color: white;
-    margin: 0 auto;
-    margin-top: -5em;
-    margin-right: 4em;
+    margin: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 30px;
+    margin-left: 30px;
     padding-right: 1.5em;
     border-radius: 2em;
     height: 500px;
   }
   
-  .contenedor-imagen img 
+  .resultado 
   {
     display: flex;
-    width: 80%;
-    margin: auto;
-  }
-  
-  #resultado 
-  {
-    display: flex;
+    justify-content: center;
     color: rgb(0, 0, 0);
     width: 100%;
-    font-size: 1.3em;
+    font-size: 20px;
     padding: 0.5em;
     border: none;
     height: 90%;
-    text-align: start;
+    text-align: left;
     background-color: transparent;
     margin: auto;
     margin-bottom: 0.5em;
+    margin-top: auto;
     resize: none;
     outline: none;
-    margin-top: 1em;
     overflow: auto;
-    word-break: break-word;
     line-height: 150%;
   }
-  
-   
-  footer 
-  {
-    background: darkblue;
-    color: white;
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 90%;
-    margin: 0 auto;
-    height: 10px;
-    font-size: 1em;
-    padding: 0.8em;
-    text-align: center;
-    box-shadow: 0px 45px 56px 15px rgb(0 0 0);
-    border-radius: 4em 4em 0px 0px; 
-  }
-  
+    
   /*Parametros que permite la pagina sea Responsive*/
-  @media only screen and (max-width: 770px) 
+  @media only screen and (max-width: 750px) 
   {
     main 
     {
@@ -189,59 +157,45 @@ body
       margin-bottom: 1.5em;
     }
     
-    .encriptar-mensaje p {
-      padding-top: 1.5em;
-    }
-  
     .botones 
     {
       margin: auto;
+      flex-direction: column;
       margin-top: 30px;
-      width: 100%;
+      margin-left: 5px;
+      width: 50%;
     }
   
-    .boton1, .boton2 
+    .boton1, .boton2, .boton3 
     {
       width: 25em;
-      font-size: 15px;
+      font-size: 20px;
+      flex-direction: column;
     }
   
-    .text-area {
+    .texboxarea 
+    {
       font-size: 1.5em;    
       margin: 0;
       margin-top: 10%;
       width: 100%;
     }
   
-    .text-area::placeholder 
+    .texboxarea::placeholder 
     {
       font-size: 20px;
     }
   
-    .tablero 
-    {
-      margin: 0 auto;
-      font-size: 100%;
-      width: 90%;
-      height: auto;
-      margin-bottom: 70px;
-    }
-  
-      
-    #resultado 
+       
+    .resultado 
     {
       height: auto;
       margin-left: 20px;
       width: 90%;
     }
-
-    footer 
-    {
-      font-size: 0.8em; 
-    }
   }
   
-  @media only screen and (max-width: 400px) 
+  @media only screen and (max-width: 300px) 
   {
   
     main 
@@ -254,23 +208,21 @@ body
       align-items: center;
     }
   
-    header {
+    header 
+    {
       width: auto;
       margin-left: 2em;
       margin-top: 4em;
     }
   
-    header img {
-      width: 7%;
-    }
-  
+     
     .encriptar-mensaje 
     {
       margin: auto;
     }
   
   
-    .text-area 
+    .texboxarea 
     {
       font-size: 1.2em;    
       margin: 0;
@@ -278,7 +230,7 @@ body
       width: 100%;
     }
   
-    .text-area::placeholder
+    .texboxarea::placeholder
     {
       font-size: 1em;
     }
@@ -292,9 +244,10 @@ body
       width: 100%;
     }
   
-    .boton1, .boton2 
+    .boton1, .boton2 .boton3
     {
       width: 100%;
+      flex-direction: column;
       align-items: center;
     }
   
@@ -310,14 +263,10 @@ body
       
     }
     
-    #resultado 
+    .resultado 
     {
       height: auto;
       margin-left: 15px;
     }
-  
-    footer {
-      font-size: 0.8em; 
-    }
-  
+    
   }
